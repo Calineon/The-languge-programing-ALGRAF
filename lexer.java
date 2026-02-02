@@ -10,10 +10,10 @@ package com.mycompany.the_language_programing_algraf;
  */
 public class The_language_programing_ALGRAF {
     enum token{
-    IDENTIFIER,
-    KEYWORD
+    KEYWORD, INDENTIFIER, NUMBER, OPERATOR
     };
     public static void main(String[] args) {
        
     }
 }
+
