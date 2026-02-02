@@ -3,17 +3,44 @@
  */
 
 package com.mycompany.the_language_programing_algraf;
-
+import java.util.Scanner;
 /**
  *
  * @author Acer
  */
+class calculator{
+int number1;
+char character;
+int number2;
+int result;
+}
 public class The_language_programing_ALGRAF {
-    enum token{
-    KEYWORD, INDENTIFIER, NUMBER, OPERATOR
-    };
     public static void main(String[] args) {
-       
+    Scanner scanner=new Scanner(System.in);
+    calculator p =new calculator();
+    p.number1=scanner.nextInt();
+    p.character=scanner.next().charAt(0);
+    p.number2=scanner.nextInt();
+    while(true){
+    if(p.character=='+'){
+     p.result=p.number1+p.number2;
+     System.out.println(p.result);
+    }
+    if(p.character=='-'){
+      p.result=p.number1-p.number2; 
+      System.out.println(p.result);
+    }
+    if(p.character=='*'){
+      p.result=p.number1*p.number2;
+      System.out.println(p.result);
+    }
+    else if(p.character=='/'){
+       if(p.number2!=2/0){
+        p.result=p.number1+p.number2; 
+       }
+    }
+    break;
+    }
     }
 }
 
