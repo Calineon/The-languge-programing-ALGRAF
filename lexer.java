@@ -14,7 +14,17 @@ char character;
 int number2;
 int result;
 }
+enum Token_type{
+PlUS,MINUS, MULTIPLY,DIVISION,LPARAM,RPARAM,EOF
+}
+
 public class The_language_programing_ALGRAF {
+class Token{
+Token_type type;
+String value;
+}
+
+
     public static void main(String[] args) {
     Scanner scanner=new Scanner(System.in);
     calculator p =new calculator();
@@ -43,4 +53,3 @@ public class The_language_programing_ALGRAF {
     }
     }
 }
-
